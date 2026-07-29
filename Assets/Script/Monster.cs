@@ -42,11 +42,11 @@ public class Monster : EventMono
     */
     public void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("Stay");
+        //Debug.Log("Stay");
         var p = collision.gameObject.GetComponent<Player>();
         if(p != null)
         {
-            Debug.Log("Stay DMG");
+            //Debug.Log("Stay DMG");
             p.TakeDamage(data.Power*Time.deltaTime);
         }
     }
@@ -61,6 +61,7 @@ public class Monster : EventMono
     public void Dead()
     {
         Destroy(this.gameObject);
+        EnemyManager.Instance.RemoveItem(this);
     }
     public void Move()
     {

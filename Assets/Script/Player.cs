@@ -44,7 +44,7 @@ public class Player : EventMono
     }
     public void TakeDamage(float value)
     {
-        Debug.Log($"Stay DMG Value : {value}");
+        //Debug.Log($"Stay DMG Value : {value}");
         GameManager.Instance.CurState.PStat.Hp -= value;
     }
     public float Speed => GameManager.Instance.CurState.PStat.Speed;

@@ -13,6 +13,7 @@ public class EnemyData : TData
         var result = Instantiate(prefab).GetComponent<Monster>();
         result.Init(this);
         result.Position = pos;
+        EnemyManager.Instance.AddItem(result);
         return result;
     }
 }

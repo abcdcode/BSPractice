@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SwordStrikeProjectile : MonoBehaviour
 {
-    public void OTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         var e = collision.gameObject.GetComponent<Monster>();
         if(e != null)
@@ -14,12 +14,14 @@ public class SwordStrikeProjectile : MonoBehaviour
     public void Update()
     {
         time += Time.deltaTime;
+        this.transform.position += dir.normalized * 10 * Time.deltaTime;
         if(time >= Timer)
         {
             Destroy(this.gameObject);
             return;
         }
     }
+    public Vector3 dir;
     public float time;
     public const float Timer = 1.5f;
 }

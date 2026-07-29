@@ -15,14 +15,15 @@ public class SwordStrike : Skill
         if(cool <= 0)
         {
             var p = GameManager.Instance.player;
-            var b = UnityEngine.Object.Instantiate(data.prefab);
+            var b = UnityEngine.Object.Instantiate(data.prefab).GetComponent<SwordStrikeProjectile>();
             var e = EnemyManager.Instance.GetNearestEnemy(p.Position);
             if(e == null)
             {
                 cool = data.Cool;
                 return;
             }
-            b.transform.forward = (e.Position-p.Position).normalized;
+            b.dir = e.Position - p.Position;
+            b.transform.right = b.dir;
             b.transform.position = p.Position;
             cool = data.Cool;
         }

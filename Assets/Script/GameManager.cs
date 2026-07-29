@@ -16,6 +16,7 @@ public class GameManager : SingletonBehavior<GameManager>
         if(TmpTimer > 1)
         {
             skeleton.BuildMonster(player.Position + new Vector3(10,10));
+            TmpTimer = 0;
         }
         CurState.GameUpdate();
     }
