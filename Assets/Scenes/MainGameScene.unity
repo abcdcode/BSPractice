@@ -119,63 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &140641934
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1288018364764069587, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_Name
-      value: MapTile
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118866821837151787, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
 --- !u!1 &218441876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2984020792067643684, guid: 1afd2201d08d53b46a27d9c19d3dd6da, type: 3}
@@ -266,6 +209,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 957383946e7b01f45934cae513baa392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapTileGenerator
+  minX: 0
+  minY: 0
+  maxX: 0
+  maxY: 0
+  cX: 0
+  cY: 0
+  SpawnTiles: []
   tilePrefab: {fileID: 1288018364764069587, guid: e286ad41197d11c4590a9a8a00d9814d, type: 3}
 --- !u!4 &1157275676
 Transform:
@@ -497,5 +447,4 @@ SceneRoots:
   - {fileID: 1831741642}
   - {fileID: 638610019602764145}
   - {fileID: 1157275676}
-  - {fileID: 140641934}
   - {fileID: 469403267}
