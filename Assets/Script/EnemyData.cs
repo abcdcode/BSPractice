@@ -6,6 +6,7 @@ public class EnemyData : TData
     public float Exp;
     public float Speed;
     public float Range;
+    public float Power;
     public GameObject prefab;
     public Monster BuildMonster(Vector2 pos)
     {

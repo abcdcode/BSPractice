@@ -16,4 +16,5 @@ MonoBehaviour:
   Exp: 5
   Speed: 3
   Range: 1
+  Power: 5
   prefab: {fileID: 6189260278139990893, guid: 3d7120caf69b5c342aa961745efee209, type: 3}

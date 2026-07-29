@@ -24,6 +24,24 @@ public class Monster : EventMono
             Attack();
         }
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Enter");
+        var p = collision.gameObject.GetComponent<Player>();
+        if(p != null)
+        {
+            p.TakeDamage(data.Power*Time.deltaTime);
+        }
+    }
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log("Stay");
+        var p = collision.gameObject.GetComponent<Player>();
+        if(p != null)
+        {
+            p.TakeDamage(data.Power*Time.deltaTime);
+        }
+    }
     public void Move()
     {
         animator.SetFloat("Move",1);
