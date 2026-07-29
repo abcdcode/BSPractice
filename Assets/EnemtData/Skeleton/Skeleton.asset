@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066d831587b4cf5489e9b64622956903, type: 3}
   m_Name: Skeleton
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  Hp: 0
-  Exp: 0
-  Speed: 0
+  Hp: 10
+  Exp: 5
+  Speed: 3
+  Range: 1
   prefab: {fileID: 6189260278139990893, guid: 3d7120caf69b5c342aa961745efee209, type: 3}

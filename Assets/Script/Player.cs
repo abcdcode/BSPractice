@@ -42,6 +42,10 @@ public class Player : EventMono
         }
         this.transform.Translate(movePos.normalized * Speed * Time.deltaTime);
     }
+    public void TakeDamage(float value)
+    {
+        GameManager.Instance.CurState.PStat.Hp -= value;
+    }
     public float Speed => DefaultSpeed;
     public Animator animator;
     public const float DefaultSpeed = 5;
