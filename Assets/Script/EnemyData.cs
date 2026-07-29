@@ -11,7 +11,7 @@ public class EnemyData : TData
     public Monster BuildMonster(Vector2 pos)
     {
         var result = Instantiate(prefab).GetComponent<Monster>();
-        result.data = this;
+        result.Init(this);
         result.Position = pos;
         return result;
     }

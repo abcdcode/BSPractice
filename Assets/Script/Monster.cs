@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class Monster : EventMono
 {
+    public void Init(EnemyData d)
+    {
+        data = d;
+        Hp = data.Hp;
+    }
     public void Update()
     {
         ChasePlayer();
@@ -24,6 +29,7 @@ public class Monster : EventMono
             Attack();
         }
     }
+    /*
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Enter");
@@ -33,12 +39,14 @@ public class Monster : EventMono
             p.TakeDamage(data.Power*Time.deltaTime);
         }
     }
+    */
     public void OnCollisionStay2D(Collision2D collision)
     {
         Debug.Log("Stay");
         var p = collision.gameObject.GetComponent<Player>();
         if(p != null)
         {
+            Debug.Log("Stay DMG");
             p.TakeDamage(data.Power*Time.deltaTime);
         }
     }
@@ -50,6 +58,7 @@ public class Monster : EventMono
     {
         animator.SetTrigger("Attack");
     }
+    public float Hp;
     public EnemyData data;
     public Animator animator;
 }
