@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : EventMono
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,5 +44,5 @@ public class Player : MonoBehaviour
     }
     public float Speed => DefaultSpeed;
     public Animator animator;
-    public const float DefaultSpeed = 2;
+    public const float DefaultSpeed = 5;
 }
