@@ -50,6 +50,18 @@ public class Monster : EventMono
             p.TakeDamage(data.Power*Time.deltaTime);
         }
     }
+    public void TakeDamage(float value)
+    {
+        Hp -= value;
+        if(Hp <= 0)
+        {
+            Dead();
+        }
+    }
+    public void Dead()
+    {
+        Destroy(this.gameObject);
+    }
     public void Move()
     {
         animator.SetFloat("Move",1);

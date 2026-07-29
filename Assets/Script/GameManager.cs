@@ -12,8 +12,14 @@ public class GameManager : SingletonBehavior<GameManager>
     }
     public void Update()
     {
+        TmpTimer += Time.deltaTime;
+        if(TmpTimer > 1)
+        {
+            skeleton.BuildMonster(player.Position + new Vector3(10,10));
+        }
         CurState.GameUpdate();
     }
+    public float TmpTimer;
     public Player player;
     public EnemyData skeleton;
     public GameState CurState{get;private set;}

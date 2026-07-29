@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be64b6e44d3916b4db525fd5843a3645, type: 3}
+  m_Name: SwordStrike
+  m_EditorClassIdentifier: Assembly-CSharp::SkillData
+  dataId: SwordStrike
+  Cool: 2
+  prefab: {fileID: 4453955316423509795, guid: 4e32ef1c728a5394a813077b0de2149c, type: 3}

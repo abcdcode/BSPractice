@@ -10,6 +10,7 @@ public class GameState
     public void GameUpdate()
     {
         GameTime += Time.deltaTime;
+        PStat.GameUpdate();
     }
     public PlayerStat PStat{get;private set;} 
     public float GameTime;
