@@ -4,5 +4,6 @@ public class GameManager : SingletonBehavior<GameManager>
     {
         CurState = new GameState();
     }
+    public Player player;
     public GameState CurState{get;private set;}
 }

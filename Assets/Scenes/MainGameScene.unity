@@ -181,6 +181,62 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2984020792067643684, guid: 1afd2201d08d53b46a27d9c19d3dd6da, type: 3}
   m_PrefabInstance: {fileID: 638610019602764145}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &218441877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4601665903009467525, guid: 1afd2201d08d53b46a27d9c19d3dd6da, type: 3}
+  m_PrefabInstance: {fileID: 638610019602764145}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218441876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e69594f81e9334eb41d2f19770d917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!1 &469403265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469403267}
+  - component: {fileID: 469403266}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &469403266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469403265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf70e43fd7fc9b446ab1660a39322acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  player: {fileID: 218441877}
+--- !u!4 &469403267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469403265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.93188, y: 11.14236, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157275674
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,3 +498,4 @@ SceneRoots:
   - {fileID: 638610019602764145}
   - {fileID: 1157275676}
   - {fileID: 140641934}
+  - {fileID: 469403267}
