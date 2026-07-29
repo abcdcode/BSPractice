@@ -26,7 +26,7 @@ public class Monster : EventMono
     }
     public void Move()
     {
-        animator.SetTrigger("Move");
+        animator.SetFloat("Move",1);
     }
     public void Attack()
     {
