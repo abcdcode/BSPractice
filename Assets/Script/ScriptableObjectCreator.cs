@@ -22,7 +22,7 @@ public class ScriptableObjectCreator : EditorWindow
         .GetAssemblies()
         .SelectMany(x => x.GetTypes())
         .Where(t =>
-            t.IsSubclassOf(typeof(ScriptableObject)) &&
+            t.IsSubclassOf(typeof(TData)) &&
             !t.IsAbstract)
         .OrderBy(t => t.Name)
         .ToArray();

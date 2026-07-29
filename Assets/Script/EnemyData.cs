@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class EnemyData : ScriptableObject
+public class EnemyData : TData
 {
     public float Hp;
     public float Exp;
+    public float Speed;
     public GameObject prefab;
     public Monster BuildMonster(Vector2 pos)
     {

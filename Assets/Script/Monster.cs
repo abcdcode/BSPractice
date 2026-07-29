@@ -23,6 +23,10 @@ public class Monster : EventMono
     {
         animator.SetTrigger("Attack");
     }
+    public void DoAttack(int v)
+    {
+        
+    }
     public EnemyData data;
     public Animator animator;
 }
