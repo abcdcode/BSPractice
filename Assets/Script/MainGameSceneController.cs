@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +15,8 @@ public class MainGameSceneController : MonoBehaviour
     {
         var ps = GameManager.Instance.CurState.PStat;
         HpBar.fillAmount = ps.Hp / ps.MaxHp;
-        Debug.Log($"HPBar Set Fill : {HpBar.fillAmount}");
+        SurvivalTimer.text = $"Survival Time : {Mathf.Round(GameManager.Instance.CurState.GameTime*10)/10}";
     }
     public Image HpBar;
+    public TextMeshProUGUI SurvivalTimer;
 }

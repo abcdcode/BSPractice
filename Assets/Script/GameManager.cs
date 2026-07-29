@@ -12,6 +12,7 @@ public class GameManager : SingletonBehavior<GameManager>
     }
     public void Update()
     {
+        CurState.GameUpdate();
     }
     public Player player;
     public EnemyData skeleton;
